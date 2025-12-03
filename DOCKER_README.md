@@ -25,11 +25,7 @@ docker build -t my-haproxy .
 We expose port **443** for traffic and **8404** for monitoring.
 
 ```bash
-docker run -d \
-  -p 443:443 \
-  -p 8404:8404 \
-  --name haproxy \
-  my-haproxy
+docker run -d -p 443:443  -p 8404:8404  --name haproxy  my-haproxy
 ```
 
 ### 3. Access Monitoring
